@@ -41,4 +41,4 @@
 *** Tweaking the history mechanism behavior
 *** Writing scripts
 *** Getting crazy with processes
-*** Big troubles: concurrency
+*** Big troubles experiment: highly concurrent history rewrite
