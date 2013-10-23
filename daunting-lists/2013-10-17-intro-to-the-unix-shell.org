@@ -1,0 +1,63 @@
+* 2013/10/17 Introduction to Unix Shells
+
+** Keeping track of commands
+
+*** What have I done: *history*
+*** What I have done: *script*
+*** What have I done: up and down arrows
+
+** The unix shell and some commands
+
+*** Unix shell
+*** Bash shell
+*** Prompt
+*** Read-eval-print loop (REPL)
+*** Command line
+*** Command: *whoami*
+*** Command: *date*
+*** Command: *echo*
+*** Command: *bash*
+
+*** Command: *cat*
+
+** The directory tree
+
+*** Directory (folder)
+*** Command: *mkdir*
+*** Command: *cd*
+*** Tab-completion (Tab)
+*** File
+*** Command: *touch*
+*** Directory tree (directory hierarchy)
+*** Slash ("/")
+*** Command: *ls*
+*** Working directory
+*** Command: *pwd*
+*** Command: *cd*
+*** Path
+*** Absolute path
+*** Relative path
+*** Parent directory (..)
+*** Home directory (~)
+*** Root directory (/)
+*** Hidden files
+
+** More about commands
+
+*** Command syntax
+*** Command: *whereis*
+*** PATH
+*** Optional: environment variable
+*** Built-in command
+*** Command options
+*** Unix-style options
+*** GNU-style options
+*** Other types of options
+*** Seeking help (--help, *man*, *info*)
+
+** Redirection and pipelines
+
+*** Output redirection (>, >>)
+*** Pagers (*more*, *less*, *pg*)
+*** Creating pipelines ('|')
+*** Command: *head* and *tail*

@@ -1,0 +1,35 @@
+* 2013/10/31 More about files
+
+** Searching
+
+*** Recap: *which* *whereis* *type*
+*** Command: *find*
+*** *find* does not use GNU-style options (no "--")
+*** *find* predicates
+*** Mind blowing recursion
+*** Simple minded recursion
+*** Doing things with the findings (-exec, *xargs*)
+*** Filtering / searching lines: *grep*
+*** Optional: regular expressions
+*** Optional: better non-standard tools: *grin* and *ag*
+
+** Understanding better the file system
+
+*** Shells are just operating system pimps
+*** Unix is multiuser: file permissions
+*** Command: *ln -s*
+*** Command: *sudo*
+*** Change owner (*chown*), Change group (*chgrp*)
+*** Change permissions (*chmod*)
+*** In unix everything is a file
+*** Devices (/dev)
+*** Mounting (*mount*)
+*** Mounting points
+*** Optional: /etc/fstab
+*** Links
+*** inodes
+*** Moving files (*mv*)
+*** Symbolic links (*ln -s*)
+*** John's commands explained
+
+** Git intro

@@ -1,0 +1,44 @@
+* 2013/10/24 Job control
+
+** Up to now recap
+
+** Understanding better the command line
+
+*** What is my command? (*which*)
+*** What really is my command (*type*)
+*** Optional: *hash*
+*** What's going on with Dorothea's *cd*?
+*** Command line expansion
+*** globbing
+*** Glob patterns ("*", "?")
+*** Controlling expansion: quoting
+*** Single and double quotes behave differently
+*** Grave quotes ("`")
+
+** Job control
+
+*** Jobs?
+*** Processes
+*** Command: *ps*
+*** Command: *top*
+*** The process id (PID)
+*** The process tree
+*** Parent process, child processes
+*** Command *pstree*
+*** Kill a process (*kill*)
+*** Pausing a process (C-z)
+*** Sending a process to the background (*bg*, "&" command line modifier)
+*** Sending a process to the foreground (*fg*)
+*** Dettaching a process (*nohup*, *disown*)
+*** Real-time streaming of a file: *tail -f*
+
+** Putting all together: bash history tweaking
+
+*** The truth about the bash history mechanism
+*** ~/.bash_history
+*** When is the history read and written?
+*** Tweaking bash: ~/.bashrc
+*** Tweaking the history mechanism behavior
+*** Writing scripts
+*** Getting crazy with processes
+*** Big troubles: concurrency
