@@ -1,0 +1,144 @@
+* 2013/10/17 Introduction to Unix Shells
+
+** Keeping track of commands
+
+*** What have I done: *history*
+*** What I have done: *script*
+*** What have I done: up and down arrows
+
+** The unix shell and some commands
+
+*** Unix shell
+*** Bash shell
+*** Prompt
+*** Read-eval-print loop (REPL)
+*** Command line
+*** Command: *whoami*
+*** Command: *date*
+*** Command: *echo*
+*** Command: *bash*
+
+*** Command: *cat*
+
+** The directory tree
+
+*** Directory (folder)
+*** Command: *mkdir*
+*** Command: *cd*
+*** Tab-completion (Tab)
+*** File
+*** Command: *touch*
+*** Directory tree (directory hierarchy)
+*** Slash ("/")
+*** Command: *ls*
+*** Working directory
+*** Command: *pwd*
+*** Command: *cd*
+*** Path
+*** Absolute path
+*** Relative path
+*** Parent directory (..)
+*** Home directory (~)
+*** Root directory (/)
+*** Hidden files
+
+** More about commands
+
+*** Command syntax
+*** Command: *whereis*
+*** PATH
+*** Optional: environment variable
+*** Built-in command
+*** Command options
+*** Unix-style options
+*** GNU-style options
+*** Other types of options
+*** Seeking help (--help, *man*, *info*)
+
+** Redirection and pipelines
+
+*** Output redirection (>, >>)
+*** Pagers (*more*, *less*, *pg*)
+*** Creating pipelines ('|')
+*** Command: *head* and *tail*
+
+* 2013/10/24
+
+** Up to now recap
+
+** Understanding better the command line
+
+*** What is my command? (*which*)
+*** What really is my command (*type*)
+*** Optional: *hash*
+*** What's going on with Dorothea's *cd*?
+*** Command line expansion
+*** globbing
+*** Glob patterns ("*", "?")
+*** Controlling expansion: quoting
+*** Single and double quotes behave differently
+*** Grave quotes ("`")
+
+** Job control
+
+*** Jobs?
+*** Process
+*** Command: *ps*
+*** Command: *top*
+*** The process id (PID)
+*** The process tree
+*** Parent process, child processes
+*** Command *pstree*
+*** Kill a process (*kill*)
+*** Pausing a process (C-z)
+*** Sending a process to the background (*bg*, "&" command line modifier)
+*** Sending a process to the foreground (*fg*)
+*** Dettaching a process (*nohup*, *disown*)
+*** Real-time streaming of a file: *tail -f*
+
+** Putting all together: bash history tweaking
+
+*** The truth about the bash history mechanism
+*** ~/.bash_history
+*** When is the history read and written?
+*** Tweaking bash: ~/.bashrc
+*** Tweaking the history mechanism behavior
+*** Writing scripts
+*** Getting crazy with processes
+*** Big troubles: concurrency
+
+
+* 2013/10/31
+
+** Getting better at searching
+
+*** Recap: *which* *whereis* *type*
+*** Command: *find*
+*** *find* does not use GNU-style options (no "--")
+*** *find* predicates
+*** Mind blowing recursion
+*** Simple minded recursion
+*** Doing things with the findings (-exec, *xargs*)
+*** Filtering / searching lines: *grep*
+*** Optional: regular expressions
+*** Optional: better non-standard tools: *grin* and *ag*
+
+
+** Understanding better the file system
+
+*** Shells are just operating system pimps
+*** Unix is multiuser: file permissions
+*** Command: *ln -s*
+*** Command: *sudo*
+*** Change owner (*chown*), Change group (*chgrp*)
+*** Change permissions (*chmod*)
+*** In unix everything is a file
+*** Devices (/dev)
+*** Mounting (*mount*)
+*** Mounting points
+*** Optional: /etc/fstab
+*** Links
+*** inodes
+*** Moving files (*mv*)
+*** Symbolic links (*ln -s*)
+*** John's commands explained
