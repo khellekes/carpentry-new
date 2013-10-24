@@ -24,7 +24,8 @@
 *** File permissions: interpreting ls -l
 *** Who can do what: user, group and everybody
 *** Who can do what: read, write, execute
-*** Change file owner (*chown*), Change file group (*chgrp*)
+*** Change file owner (*chown*)
+*** Change file group (*chgrp*)
 *** Change file permissions (*chmod*)
 *** The superuser (root and you)
 *** Command: *sudo*
@@ -33,33 +34,62 @@
 
 ** Scripts sneak peek
 
-*** Scripts, productivity, reproducibility
+*** Scripts: automation, productivity, reproducibility
 *** Writing scripts
 *** What is a loop?
 *** An infinite loop script
+#+begin_src bash
+#!/bin/bash
+while true                            # Forever...
+do
+    echo "My Process ID (PID) is $$"  # Show the current process id
+    echo "And now we are at" `date`   # Show the time and date
+    echo "Press [CTRL+C] to stop"     # Show some help
+    echo "Press [CTRL+Z] to pause"    # Show more help
+    echo "---------------------------------------------------------"
+    sleep 1                           # Sleep 1 second
+done
+#+end_src
 
 
 ** Job control
 
 *** Processes
-*** Command: *ps*
-*** Command: *top*
+*** Process status: *ps*
+*** Command: *pgrep*
+*** Command: *top*, *htop*, *glances*, *iotop*...
 *** The process id (PID)
 *** The process tree
 *** Parent process, child processes
 *** Command *pstree*
-*** Kill a process (*kill*)
-*** Pausing a process (C-z)
+*** Kill a process (*kill*, *pkill*)
+*** Pausing a process (C-z, Control-z, ^Z)
 *** Sending a process to the background (*bg*, "&" command line modifier)
+*** Background process id (%BID)
 *** Redirecting error (2>, 2>>, &>)
 *** Sending a process to the foreground (*fg*)
 *** Jobs (*jobs*)
 *** Dettaching a process (*nohup*, *disown*)
 *** Real-time streaming of a file: *tail -f*
-
-
 *** Experiment: highly concurrent file rewrite
 
+
+** Environment variables
+
+*** Passing information to processes
+*** Listing environment variables: *set* or *env*
+*** Optional: All environment variables are strings
+*** Variable lists (e.g. PATH) are separated by colon (:)
+*** Set variable value: VARIABLE_NAME=value
+*** Get variable value: $VARIABLE_NAME
+*** Variable scope (*export*)
+
+*** $EDITOR
+*** $PATH
+*** $PWD
+*** $LOGNAME
+*** $HOME
+*** ...
 
 ** Bash history tweaking
 
@@ -68,4 +98,4 @@
 *** Optional: sourcing
 *** When is the history read and written?
 *** Tweaking bash: ~/.bashrc
-*** [[http://unix.stackexchange.com/questions/1288/preserve-bash-history-in-multiple-terminal-windows][Tweaking the history mechanism behavior]]
+*** Discussion: [[http://unix.stackexchange.com/questions/1288/preserve-bash-history-in-multiple-terminal-windows][Tweaking the history mechanism behavior]]

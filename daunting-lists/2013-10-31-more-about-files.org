@@ -30,4 +30,6 @@
 *** Symbolic links (*ln -s*)
 *** John's commands explained
 
+** Using computers remotelly: ssh
+
 ** Git intro
