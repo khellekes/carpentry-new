@@ -1,0 +1,83 @@
+WFF:FLYSTOCK,,,,,,,,,,
+,,,,,,,,,,
+BOX:PB00,flipped: 2013-08-27,calid: 2c34g36p9mcv7hh5ka9qs1o2m0@group.calendar.google.com/umjh4tn87sjnq5f4v6rup1fcjs,,,,,,,,
+Label,Short Identifier,Genotype,X,Y,C2a,C2b,C3a,C3b,Extra info,Mod
+P000,VT008170-GAL4,;+;VT008170-GAL4,,,,,,,,s
+P001,VT019055-GAL4,;+;VT019055-GAL4,,,,,,,,s
+P002,VT024648-GAL4,;+;VT024648-GAL4,,,,,,,,s
+P003,VT999005-GAL4,;+;VT999005-GAL4,,,,,,,c3V 900A6 T1 B95 (201377/VT),s
+P004,VT999015-GAL4,;+;VT999015-GAL4,,,,,,,c3V 900C4 T1 B95 (201379/VT),s
+P005,VT058487-GAL4,;+;VT058487-GAL4,,,,,,,,s
+P006,GH146-GAL4,w(I);GH146-GAL4(II);+,,,,,,,GH146 / OPNs,s
+P007,VT050384-GAL4,;+;VT050384-GAL4,,,,,,,c3V 104A5 T2 B551 (204549/VT),s
+P008,VT012314-GAL4,;+;VT012314-GAL4,,,,,,,c3V 28E10 T2 B529 (201941/VT),s
+P009,VT041881-GAL4,;+;VT041881-GAL4,,,,,,,c3V 93H7 T20 B1502 (204272/VT),s
+P010,PDF-GAL4,;Pdf-GAL4;+;,,,,,,,yw??,s
+P011,VT007909-GAL4,;+;VT007909-GAL4,,,,,,,c3V 128C11 T1 B338 (207195/VT),s
+P012,VT037804-GAL4,;+;VT037804-GAL4,,,,,,,,s
+P013,Act88F-GAL4,w;Act88F-GAL4;+;,,,,,,,,s
+P014,VT050660-GAL4,;+;VT050660-GAL4;,,,,,,,,s
+P015,GNR42F06-GAL4 db,;if/cyo;GNR42F06-GAL4/Tm3ser;,,,,,,,Borst's T4/T5,s
+P016,VT008170-GAL4 db,;if/cyo;VT008170-GAL4/Tm3ser;,,,,,,,,s
+P017,VT037804-GAL4 db,;if/cyo;VT037804-GAL4/Tm3ser;,,,,,,,,s
+P018,VT058487-GAL4 db,;if/cyo;VT058487-GAL4/Tm3ser;,,,,,,,,s
+P019,GH146-GAL4 db,;GH146-GAL4/cyo;sb/Tm3ser;,,,,,,,,s
+P020,VT058488-GAL4 db,;if/cyo;VT058488-GAL4/Tm3ser;,,,,,,,not in + background,s
+P021,VT037804-LexAp65 db,;if/cyo;VT037804-LexAp65/Tm3ser;,,,,,,,,s
+P022,VT016285-LexAGAD,;+;VT016285-LexAGAD; @attp2,,,,,,,c3V 86B5 T991 B996 (208972/VT),s
+P023,Or83b-LexA::VP16,;Or83b-LexA::VP16/cyo;+;,,,,,,,,s
+P024,VT002834-LexAp65,;VT002834-LexAp65;+; @attp40,,,,,,,c2V 43G1 T997 B903 (211496/VT),s
+P025,VT050279-LexAp65,;+;VT050279-LexAp65; @attp2,,,,,,,c3V 39E10 T992 B987 (211335/VT),s
+P026,VT047320-LexAGAD,;VT047320-LexAGAD;+;,,,,,,,c2S 22A4 T1000 B2015 (208484/VT),s
+P027,VT012314-LexAp65,;+;VT012314-LexAp65; @attp2,,,,,,,c3S 28E10 T992 B988 (211065/VT),s
+P028,VT016285-LexAGAD,;VT016285-LexAGAD; @attp40,,,,,,,c2L 86B5 T1000 B2052 (210916/VT),s
+P029,VT037804-LexAp65,;+;VT037804-LexAp65; @attp2,,,,,,,,s
+P030,Or83b-LexA UAS-Aeq,;Or83b-LexA::VP16/cyo;UAS-Aeq/Tm3ser;,,,,,,,,
+P031,GH146-GAL4 LexAop-TrpA1,;GH146-GAL4/cyo;LexAop-TrpA1/Tm3ser;,,,,,,,,
+P032,UAS-Aeq ato-LexA,;UAS-Aeq/cyo;ato-LexA::VP16/Tm3ser;,,,,,,,,
+P033,LexAopTrp;VT58487GAL4,;LexAop-TrpA1/cyo;VT058487-GAL4/Tm3ser;,,,,,,,,
+P034,R11AeqTrp VT58487,";UAS-Aeq,LexAop-TrpA1::myc/cyo;VT058487-GAL4/Tm3ser;",,,,,,,R11,
+P035,R11AeqTrp VT37804,";UAS-Aeq,LexAop-TrpA1::myc/cyo;VT037804-GAL4/Tm3ser;",,,,,,,R11,
+P036,LexAop-TrpA1::myc,w;LexAop-TrpA1::myc; @260b,,,,,,,,
+P037,VT006199-LexAp65,;+;VT006199-LexAp65; @attp2,,,,,,,c3V 27A9 T992 B986 (211589/VT),s
+P038,VT050279-LexAGAD,;VT050279-LexAGAD;+; @attp40,,,,,,,c2S 39E10 T1000 B2054 (210948/VT),s
+P039,LexAopTrp;VT37804GAL4,;LexAop-TrpA1/cyo;VT037804-GAL4/Tm3ser;,,,,,,,,d
+P040,UAS-GCamp3;ato-LexA,;UAS-GCamp3/cyo;ato-<LexA::VP16>/Tm3ser;,,,,,,,,d
+P041,VT343LexA;VT37804GAL4,;VT000343-LexAGAD/cyo;VT037804-GAL4/Tm3ser;,,,,,,,,d
+P042,UAS-Aeq 3rd db,;if/cyo;UAS-Aeq/Tm3ser;,,,,,,,,
+P043,LexAop-TrpA1,;if/cyo;LexAop-TrpA1/Tm3ser;,,,,,,,,s
+P044,UAS-Aeq 3rd,;+;UAS-Aeq;,,,,,,,,s
+P045,UAS-Aeq 2nd db,;UAS-Aeq/cyo;sb/Tm3ser;,,,,,,,,s
+P046,UAS-Aeq 2nd,;UAS-Aeq;+;,,,,,,,,s
+P047,UAS-Chr2 2nd db,;UAS-ChR2/cyo;sb/Tm3ser;,,,,,,,,s
+P048,UAS-GCamp3;UAS-TrpA1,;UAS-GCamp3;UAS-TrpA1/Tm3ser;,,,,,,,,d
+P049,UAS-ChR2;UAS-Aeq,;UAS-ChR2/cyo;UAS-Aeq/Tm3ser;,,,,,,,,d
+P050,UAS-GCamp3;LexAop-TrpA1,w;UAS-GCamp3;LexAop-TrpA1;,,,,,,,,d
+P051,UAS-TrpA1;UAS-Aeq,;UAS-TrpA1/cyo;UAS-Aeq/Tm3ser;,,,,,,,,d
+P052,LexAop-TrpA1;UAS-Aeq,;LexAop-TrpA1/cyo;UAS-Aeq/Tm3ser;,,,,,,,,d
+P053,VT012314-LexAp65 db,;if/cyo;VT012314-LexAp65/Tm3ser; @attp2,,,,,,,,
+P054,VT050279-LexAGAD db,;VT050279-LexAGAD/cyo;sb/Tm3ser; @attp40,,,,,,,,
+P055,VT016285-LexAGAD db,;if/cyo;VT016285-LexAGAD/Tm3ser; @attp2,,,,,,,,
+P056,VT047320-LexAGAD db,;VT047320-LexAGAD/cyo;sb/Tm3ser; @attp40,,,,,,,,
+P057,VT002834-LexAp65 db,;VT002834-LexAp65/cyo;sb/Tm3ser; @attp40,,,,,,,c2V 43G1 T997 B903 (211496/VT),s
+P058,VT016285-LexAGAD db,;VT016285-LexAGAD/cyo;sb/Tm3ser; @attp40,,,,,,,c2L 86B5 T1000 B2052 (210916/VT),s
+P059,VT050279-LexAp65 db,;if/cyo;VT050279-LexAp65/Tm3ser; @attp2,,,,,,,c3V 39E10 T992 B987 (211335/VT),s
+P060,VT006199-LexAp65 db,;if/cyo;VT006199-LexAp65/Tm3ser; @attp2,,,,,,,c3V 27A9 T992 B986 (211589/VT),s
+P061,8xLexAop-GAL80 2nd,;8xLexAop2-IVS-GAL80-WPRE; @su(Hw)attp5,,,,,,,,
+P062,8xLexAop-GAL80 3rd,;;8xLexAop2-IVS-GAL80-WPRE; @su(Hw)attp1,,,,,,,,s
+P063,Nsyb-GAL4,;Nsyb-GAL4;;,,,,,,,,s
+P064,"R11 UAS-Aeq,LexAopTrpA1",";UAS-Aeq,LexAop-TrpA1/cyo;sb/Tm3ser;",,,,,,,R11,s
+P065,"R15 UAS-Aeq,LexAopTrpA1",";UAS-Aeq,LexAop-TrpA1/cyo;sb/Tm3ser;",,,,,,,R15,s
+P066,13xLexAop2-Aeq 2nd,;pJFRC65-13xLexAop2-IVS-GFP-Aeq-p10in/cyo; @su(Hw)attp5,,,,,,,,
+P067,13xLexAop2-Aeq attp2,;;pJFRC65-13xLexAop2-IVS-GFP-Aeq-p10in/Tm3ser; @attp2,,,,,,,,
+P068,13xLexAop2-Aeq VK0005,;;pJFRC65-13xLexAop2-IVS-GFP-Aeq-p10in; @VK0005,,,,,,,,
+P069,20xUAS-Aeq 2nd,;pJFRC96-20xUAS-GFP-Aeq; @attp40,,,,,,,,
+P070,20xUAS-Aeq VK0005,;;pJFRC96-20xUAS-IVS-GFP-Aeq-p10in; @VK0005,,,,,,,,
+P071,20xUAS-Aeq attp2,;;pJFRC96-20xUAS-IVS-GFP-Aeq-p10in; @attp2,,,,,,,,
+P072,20xUAS-GCamp3 2nd,;pJFRC97-UAS-IVS-GCamp3-p10; @su(Hw)attp1,,,,,,,,
+P073,20xUAS-GCamp3 attp2,;pJFRC97-UAS-IVS-GCamp3-p10; @attp2,,,,,,,,
+P074,20xUAS-GCamp3 vk0005,;pJFRC97-UAS-IVS-GCamp3-p10; @VK0005,,,,,,,,
+P075,Heatshock Trp,yhh;UAS-TrpA1/cyo;,,,,,,,,
+P076,"GFP, UAS-P2X2",w;UAS-CD8-GFP;UAS-P2X2;,,,,,,,,
+P077,LexAop-TrpA1 2nd db,;LexAop-TrpA1/cyo;sb/Tm3ser;,,,,,,,,
+P078,UAS-TrpA1 2nd db,;UAS-TrpA1/cyo;sb/Tm3ser;,,,,,,,,
