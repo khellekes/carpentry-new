@@ -13,15 +13,13 @@
 *** Optional: regular expressions
 *** Optional: better non-standard tools: *grin* and *ag*
 
+
 ** Understanding better the file system
 
-*** Shells are just operating system pimps
-*** Unix is multiuser: file permissions
-*** Command: *ln -s*
-*** Command: *sudo*
-*** Change owner (*chown*), Change group (*chgrp*)
-*** Change permissions (*chmod*)
 *** In unix everything is a file
+*** The truth about redirection
+*** Optional: file descriptors
+*** 2>&1
 *** Devices (/dev)
 *** Mounting (*mount*)
 *** Mounting points

@@ -12,12 +12,35 @@
 *** globbing
 *** Glob patterns ("*", "?")
 *** Controlling expansion: quoting
-*** Single and double quotes behave differently
+*** Single quotes vs double quotes
 *** Grave quotes ("`")
+
+
+
+** File permissions
+
+*** Shells are just operating system wrappers
+*** Unix is multiuser
+*** File permissions: interpreting ls -l
+*** Who can do what: user, group and everybody
+*** Who can do what: read, write, execute
+*** Change file owner (*chown*), Change file group (*chgrp*)
+*** Change file permissions (*chmod*)
+*** The superuser (root and you)
+*** Command: *sudo*
+*** Change user account: *usermod*
+
+
+** Scripts sneak peek
+
+*** Scripts, productivity, reproducibility
+*** Writing scripts
+*** What is a loop?
+*** An infinite loop script
+
 
 ** Job control
 
-*** Jobs?
 *** Processes
 *** Command: *ps*
 *** Command: *top*
@@ -28,17 +51,21 @@
 *** Kill a process (*kill*)
 *** Pausing a process (C-z)
 *** Sending a process to the background (*bg*, "&" command line modifier)
+*** Redirecting error (2>, 2>>, &>)
 *** Sending a process to the foreground (*fg*)
+*** Jobs (*jobs*)
 *** Dettaching a process (*nohup*, *disown*)
 *** Real-time streaming of a file: *tail -f*
 
-** Putting all together: bash history tweaking
+
+*** Experiment: highly concurrent file rewrite
+
+
+** Bash history tweaking
 
 *** The truth about the bash history mechanism
 *** ~/.bash_history
+*** Optional: sourcing
 *** When is the history read and written?
 *** Tweaking bash: ~/.bashrc
-*** Tweaking the history mechanism behavior
-*** Writing scripts
-*** Getting crazy with processes
-*** Big troubles experiment: highly concurrent history rewrite
+*** [[http://unix.stackexchange.com/questions/1288/preserve-bash-history-in-multiple-terminal-windows][Tweaking the history mechanism behavior]]
