@@ -4,6 +4,9 @@
 
 ## Useful links
 
+- [Week 1](daunting-lists/2013-10-17-intro-to-the-unix-shell.org)
+- [Week 2](daunting-lists/2013-10-24-job-control.org)
+
 ### Software carpentry
 
 - [Software carpentry](http://software-carpentry.org/)
