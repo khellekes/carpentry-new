@@ -2,10 +2,10 @@
 
 ## Contents lists by weeks
 
-## Useful links
-
 - [Week 1: Introduction to the Unix Shell](daunting-lists/2013-10-17-intro-to-the-unix-shell.org)
 - [Week 2: Job control](daunting-lists/2013-10-24-job-control.org)
+
+## Useful links
 
 ### Software carpentry
 
