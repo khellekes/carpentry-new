@@ -61,6 +61,8 @@ done
 *** The process id (PID)
 *** The process tree
 *** Parent process, child processes
+*** Why *cd* must be a builtin
+- Inheritance analogy, the parent-child works very well
 *** Command *pstree*
 *** Kill a process (*kill*, *pkill*)
 *** Pausing a process (C-z, Control-z, ^Z)
@@ -72,7 +74,6 @@ done
 *** Dettaching a process (*nohup*, *disown*)
 *** Real-time streaming of a file: *tail -f*
 *** Experiment: highly concurrent file rewrite
-
 
 ** Environment variables
 
@@ -99,3 +100,5 @@ done
 *** When is the history read and written?
 *** Tweaking bash: ~/.bashrc
 *** Discussion: [[http://unix.stackexchange.com/questions/1288/preserve-bash-history-in-multiple-terminal-windows][Tweaking the history mechanism behavior]]
+
+** TODO Look at the notes in the mantop
