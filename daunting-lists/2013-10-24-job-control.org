@@ -1,9 +1,9 @@
 * 2013/10/24 Job control
 
-** Up to now recap
+** DONE Up to now recap
 
 
-** Understanding better the command line
+** DONE Understanding better the command line
 
 *** What is my command? (*which*)
 *** What really is my command (*type*)
@@ -18,7 +18,7 @@
 
 
 
-** File permissions
+** DONE File permissions
 
 *** Shells are just operating system wrappers
 *** Unix is multiuser
@@ -33,7 +33,7 @@
 *** Change user account: *usermod*
 
 
-** Scripts sneak peek
+** DONE Scripts sneak peek
 
 *** Scripts: automation, productivity, reproducibility
 *** Writing scripts
@@ -53,14 +53,56 @@ done
 #+end_src
 
 
+** DONE Wrapping up loose ends
+
+*** DONE Use the output of script: scriptreplay, less -R, cat
+
+*** DONE Command line expansion and ls /usr/*n
+
+
+** DONE Searching things
+
+*** Recap: *which* *whereis*
+*** Command: *find*
+*** *find* does not use GNU-style options (no "--")
+*** *find* predicates
+*** Recursion
+*** Limiting recursion
+*** Doing things with the findings (-exec, *xargs*)
+*** Filtering / searching lines: *grep*
+*** Optional: regular expressions
+*** Optional: better non-standard tools: *grin* and *ag*
+
+
+
+** Environment variables
+
+*** Passing information to processes
+*** Listing environment variables: *set* or *env*
+*** Optional: All environment variables are strings
+*** Variable lists (e.g. PATH) are separated by colon (:)
+*** Set variable value: VARIABLE_NAME=value
+*** Get variable value: $VARIABLE_NAME
+*** Variable scope (*export*)
+*** $EDITOR
+*** $PATH
+*** $PWD
+*** $LOGNAME
+*** $HOME
+*** $PYTHONPATH
+*** $GIT_COMMITTER_NAME
+*** ...
+
+
 ** Job control
-*** Processes
-*** Process status: *ps*
-*** Command: *pgrep*
-*** Command: *top*, *htop*, *glances*, *iotop*...
-*** The process id (PID)
-*** The process tree
-*** Parent process, child processes
+
+*** DONE Processes
+*** DONE Process status: *ps*
+*** DONE Command: *pgrep*
+*** DONE Command: *top*, *htop*, *glances*, *iotop*...
+*** DONE The process id (PID)
+*** DONE The process tree
+*** DONE Parent process, child processes
 *** Why *cd* must be a builtin
 *** Command *pstree*
 *** Kill a process (*kill*, *pkill*)
@@ -75,24 +117,6 @@ done
 *** Experiment: highly concurrent file rewrite
 
 
-** Environment variables
-
-*** Passing information to processes
-*** Listing environment variables: *set* or *env*
-*** Optional: All environment variables are strings
-*** Variable lists (e.g. PATH) are separated by colon (:)
-*** Set variable value: VARIABLE_NAME=value
-*** Get variable value: $VARIABLE_NAME
-*** Variable scope (*export*)
-
-*** $EDITOR
-*** $PATH
-*** $PWD
-*** $LOGNAME
-*** $HOME
-*** ...
-
-
 ** Bash history tweaking
 
 *** The truth about the bash history mechanism
@@ -101,3 +125,18 @@ done
 *** When is the history read and written?
 *** Tweaking bash: ~/.bashrc
 *** Discussion: [[http://unix.stackexchange.com/questions/1288/preserve-bash-history-in-multiple-terminal-windows][Tweaking the history mechanism behavior]]
+
+
+** Pending questions
+
+*** How to indicate tab as delimiter for cut?
+
+man cut ==> /tab ==> it is the default!
+
+also: http://www.linuxquestions.org/questions/programming-9/how-use-cut-d-%27delimiter%27-is-delimiter-is-a-tab-720186/
+
+*** When to use pipes, when backquotes, when xargs, when exec?
+
+Starting from the fact that some do different things (pipes write to stdin, the rest "generate command lines").
+
+A good example could come from find + grep

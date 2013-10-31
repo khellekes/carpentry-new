@@ -1,20 +1,5 @@
 * 2013/10/31 More about files
 
-** Searching
-
-*** Recap: *which* *whereis* *type*
-*** Command: *find*
-*** *find* does not use GNU-style options (no "--")
-*** *find* predicates
-*** Mind blowing recursion
-*** Simple minded recursion
-*** Doing things with the findings (-exec, *xargs*)
-*** Filtering / searching lines: *grep*
-*** Optional: regular expressions
-*** Optional: better non-standard tools: *grin* and *ag*
-
-*** Keeping permissions: *tar*
-
 ** Understanding better the file system
 
 *** In unix everything is a file
@@ -31,6 +16,7 @@
 *** Symbolic links (*ln -s*)
 *** John's commands explained
 
+*** Keeping permissions *tar*
 ** Using computers remotelly: ssh
 
 ** Git intro
