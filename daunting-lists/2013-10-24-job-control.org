@@ -2,6 +2,7 @@
 
 ** Up to now recap
 
+
 ** Understanding better the command line
 
 *** What is my command? (*which*)
@@ -100,6 +101,3 @@ done
 *** When is the history read and written?
 *** Tweaking bash: ~/.bashrc
 *** Discussion: [[http://unix.stackexchange.com/questions/1288/preserve-bash-history-in-multiple-terminal-windows][Tweaking the history mechanism behavior]]
-
-
-** Notes
