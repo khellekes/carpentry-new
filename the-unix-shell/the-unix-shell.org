@@ -1,9 +1,75 @@
-* 2013/10/24 Job control
+#+STARTUP: indent
+#+STARTUP: showstars
 
-** DONE Up to now recap
+* Introduction to Unix Shells
+
+** Keeping track of commands
+*** What have I done: *history*
+*** What I have done: *script*
+*** What have I done: up and down arrows
 
 
-** DONE Understanding better the command line
+** The unix shell and some commands
+
+*** Unix shell
+*** Bash shell
+*** Prompt
+*** Read-eval-print loop (REPL)
+*** Command line
+*** Command: *whoami*
+*** Command: *date*
+*** Command: *echo*
+*** Command: *bash*
+
+*** Command: *cat*
+
+
+** The directory tree
+
+*** Directory (folder)
+*** Command: *mkdir*
+*** Command: *cd*
+*** Tab-completion (Tab)
+*** File
+*** Command: *touch*
+*** Directory tree (directory hierarchy)
+*** Slash ("/")
+*** Command: *ls*
+*** Working directory
+*** Command: *pwd*
+*** Command: *cd*
+*** Path
+*** Absolute path
+*** Relative path
+*** Parent directory (..)
+*** Home directory (~)
+*** Root directory (/)
+*** Hidden files
+
+
+** More about commands
+
+*** Command syntax
+*** Command: *whereis*
+*** PATH
+*** Optional: environment variable
+*** Built-in command
+*** Command options
+*** Unix-style options
+*** GNU-style options
+*** Other types of options
+*** Seeking help (--help, *man*, *info*)
+
+
+** Redirection and pipelines
+
+*** Output redirection (>, >>)
+*** Pagers (*more*, *less*, *pg*)
+*** Creating pipelines ('|')
+*** Command: *head* and *tail*
+
+
+** Understanding better the command line
 
 *** What is my command? (*which*)
 *** What really is my command (*type*)
@@ -17,8 +83,7 @@
 *** Grave quotes ("`")
 
 
-
-** DONE File permissions
+** File permissions
 
 *** Shells are just operating system wrappers
 *** Unix is multiuser
@@ -33,8 +98,7 @@
 *** Change user account: *usermod*
 
 
-** DONE Scripts sneak peek
-
+** Scripts sneak peek
 *** Scripts: automation, productivity, reproducibility
 *** Writing scripts
 *** What is a loop?
@@ -53,15 +117,12 @@ done
 #+end_src
 
 
-** DONE Wrapping up loose ends
-
-*** DONE Use the output of script: scriptreplay, less -R, cat
-
-*** DONE Command line expansion and ls /usr/*n
+** Wrapping up loose ends
+*** Use the output of script: scriptreplay, less -R, cat
+*** Command line expansion and ls /usr/*n
 
 
-** DONE Searching things
-
+** Searching things
 *** Recap: *which* *whereis*
 *** Command: *find*
 *** *find* does not use GNU-style options (no "--")
@@ -74,9 +135,7 @@ done
 *** Optional: better non-standard tools: *grin* and *ag*
 
 
-
 ** Environment variables
-
 *** Passing information to processes
 *** Listing environment variables: *set* or *env*
 *** Optional: All environment variables are strings
@@ -96,13 +155,13 @@ done
 
 ** Job control
 
-*** DONE Processes
-*** DONE Process status: *ps*
-*** DONE Command: *pgrep*
-*** DONE Command: *top*, *htop*, *glances*, *iotop*...
-*** DONE The process id (PID)
-*** DONE The process tree
-*** DONE Parent process, child processes
+*** Processes
+*** Process status: *ps*
+*** Command: *pgrep*
+*** Command: *top*, *htop*, *glances*, *iotop*...
+*** The process id (PID)
+*** The process tree
+*** Parent process, child processes
 *** Why *cd* must be a builtin
 *** Command *pstree*
 *** Kill a process (*kill*, *pkill*)
@@ -127,7 +186,28 @@ done
 *** Discussion: [[http://unix.stackexchange.com/questions/1288/preserve-bash-history-in-multiple-terminal-windows][Tweaking the history mechanism behavior]]
 
 
-** Pending questions
+** Understanding better the file system
+*** In unix everything is a file
+*** The truth about redirection
+*** Optional: file descriptors
+*** 2>&1
+*** Devices (/dev)
+*** Mounting (*mount*)
+*** Mounting points
+*** Optional: /etc/fstab
+*** Links
+*** inodes
+*** Moving files (*mv*)
+*** Symbolic links (*ln -s*)
+*** John's commands explained
+
+*** Keeping permissions *tar*
+
+
+** Using computers remotelly: ssh
+
+
+** TODO Pending questions
 
 *** How to indicate tab as delimiter for cut?
 
