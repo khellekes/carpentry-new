@@ -6,22 +6,86 @@ Do not run any script without understanding what it does
 
 ** Run the initialization script
 
+*** A1 Generate the exercises playground, create a command list
+
 #+begin_src bash
+
+# Go to the exercises subdirectory in your carpentry directory
 cd ~/carpentry/the-unix-shell/exercises
-git pull  # Get the latest changes from the online repository
+
+# Get the latest changes from the online repository
+git pull
+
+# Run the following command:
 ../scripts/initialize_exercises_dirtree.sh santi
+
+# This should have generated some directories and files under the exercises directory.
+# Creating many directories and files under:
+#    /home/santi/Proyectos/imp/org/carpentry/--public/the-unix-shell/exercises/less
+
+# Now go and explore your exercises playground directory
+cd santi
+ls -la
+find . -iname '*secret*'
+
+# You should be able to see a file called command-table.org
+cat command-table.org | less
+# That is a file that you can edit, adding very short descriptions and notes for the commands we have seen in class.
+nano command-table.org
+# Some of these commands we haven't seen, and from now on you will be responsible to update the table.
+# Although I will keep mine updated, so you can ask me for it at any time.
+
+# You can notice that many files here have extension ".org"
+# I just happen to like org-mode: http://orgmode.org/
+# They are plain text files and you can read and edit them as you would any other text file
+# If you do so with emacs or let github render them, they will look nice.
+# See for example: https://github.com/strawlab/carpentry/blob/master/the-unix-shell/command-table.org
 #+end_src
 
-As an optional exercise, let's look into the initialisation script:
+
+*** A2 Look into the initialisation script
+
+As a general rule, one should always be aware and mildly trust whatever is being executed. Let's have a look at the script we have just run:
 #+begin_src bash
 less ../scripts/initialize_exercises_dirtree.sh
 #+end_src
-As a general rule, one should always understand what ins running. This script is very simple despite some blah
+
+We haven't explicitly seen yet some concepts we need to fully understand the script: variables, conditionals, links... The script is very simple despite some (unnecessary) complexity added for the sake of making the script work no matter of the current working directory.
+
+We will probably dissect the script in class. In the meantime, some questions for you:
+
+- What does it mean the shell bang, the very first line in the script?
+#+begin_src bash
+#!/bin/bash
+#+end_src
+
+- How does the "-p" option change *mkdir* behavior?
+
+- How does the "-n" option change *cp* behavior? As in:
+#+begin_src bash
+cp -n "$MY_DIR/../command-table.org" "${EXERCISES_DIR}"
+#+end_src
+  - How does this relate to the redirection operator ">>".
+  - What does a programmer mean by "clobbering" a file?
+  - Why wouldn't I want to clobber your command-table.org file?
+
+- Why would one put curly brackets ("{}") around variable names. Was it needed here?
+
+- Why would one quote variable expansion when expanding paths? For example:
+#+begin_src bash
+mkdir -p "${EXERCISES_DIR}"
+#+end_src
+Was it needed here?
+
+- What is the script purpose?
+
 
 ** Walking around the directory tree
 
 #+begin_src bash
 #+end_src
+
+** Dissecting command lines
 
 ** Bash history tweaking
 
