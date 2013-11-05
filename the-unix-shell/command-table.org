@@ -1,0 +1,66 @@
+* Command list
+
+This is an ongoing list of commands we have seen in class. Type "man <command>" to find information (for a small number of them there will be no manpage). Type "type <command>" to check the command type in your system. Feel free to add to the list or reorganize it at your will.
+
+| Name         | Purpose                                             | Type    | Comments                                     |
+|--------------+-----------------------------------------------------+---------+----------------------------------------------|
+| man          | Show manuals for commands on screen                 |         | Press h for help, q to quit                  |
+| info         |                                                     |         |                                              |
+| pwd          | Print Working Directory                             | builtin | Print Working Directory                      |
+| whereis      |                                                     |         |                                              |
+| which        |                                                     |         |                                              |
+| type         |                                                     |         |                                              |
+| hash         |                                                     |         |                                              |
+| echo         | Display a line of text                              | builtin |                                              |
+| ls           | List directory contents                             | alias   | In my system, an alias to ls --color=auto    |
+| whoami       |                                                     |         |                                              |
+| date         |                                                     |         |                                              |
+| bash         |                                                     |         |                                              |
+| script       |                                                     |         |                                              |
+| history      |                                                     |         |                                              |
+| scriptreplay |                                                     |         |                                              |
+| more         |                                                     |         |                                              |
+| less         |                                                     |         |                                              |
+| pg           |                                                     |         |                                              |
+| mkdir        |                                                     |         |                                              |
+| cd           |                                                     |         |                                              |
+| ls           |                                                     |         |                                              |
+| touch        |                                                     |         |                                              |
+| nano         | A very simple editor                                | file    |                                              |
+| vim          |                                                     |         |                                              |
+| cp           |                                                     |         |                                              |
+| mv           |                                                     |         |                                              |
+| rmdir        |                                                     |         |                                              |
+| rm           |                                                     |         |                                              |
+| alias        |                                                     |         |                                              |
+| head         |                                                     |         |                                              |
+| tail         |                                                     |         |                                              |
+| cat          | ConCATenate files and print the result              | file    | The result is printed to the standard output |
+| chown        |                                                     |         |                                              |
+| chgrp        |                                                     |         |                                              |
+| chmod        |                                                     |         |                                              |
+| sudo         |                                                     |         |                                              |
+| su           |                                                     |         |                                              |
+| usermod      |                                                     |         |                                              |
+| find         | Search for files in a directory hierarchy           | file    | Look also at "info find"                     |
+| xargs        | Build and execute command lines from standard input |         | Frequently used in combination with find     |
+| grep         |                                                     |         |                                              |
+| env          |                                                     |         |                                              |
+| export       |                                                     |         |                                              |
+| source       |                                                     |         |                                              |
+| ps           |                                                     |         |                                              |
+| pstree       |                                                     |         |                                              |
+| pgrep        |                                                     |         |                                              |
+| top          |                                                     |         |                                              |
+| kill         |                                                     |         |                                              |
+| pkill        |                                                     |         |                                              |
+| bg           |                                                     |         |                                              |
+| fg           |                                                     |         |                                              |
+| jobs         |                                                     |         |                                              |
+| nohup        |                                                     |         |                                              |
+| disown       |                                                     |         |                                              |
+| sort         |                                                     |         |                                              |
+| cut          |                                                     |         |                                              |
+| uniq         |                                                     |         |                                              |
+| wc           |                                                     |         |                                              |
+|--------------+-----------------------------------------------------+---------+----------------------------------------------|

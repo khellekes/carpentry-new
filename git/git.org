@@ -1,0 +1,1 @@
+* Managing Change: Version Control with *git*

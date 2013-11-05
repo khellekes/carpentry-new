@@ -3,12 +3,6 @@
 
 * Introduction to Unix Shells
 
-** Keeping track of commands
-*** What have I done: *history*
-*** What I have done: *script*
-*** What have I done: up and down arrows
-
-
 ** The unix shell and some commands
 
 *** Unix shell
@@ -20,45 +14,63 @@
 *** Command: *date*
 *** Command: *echo*
 *** Command: *bash*
-
 *** Command: *cat*
+
+
+** Keeping track of executed commands
+
+*** What have I done? *history*
+*** What have I done? *script*
+*** *script* output is messy: [[http://ascii-table.com/ansi-escape-sequences.php][control sequences]]
+*** Use the output of *script*: *scriptreplay*, *less -R*, *cat*
+*** What have I done? Up and Down arrows
 
 
 ** The directory tree
 
-*** Directory (folder)
-*** Command: *mkdir*
+*** Directory (aka folder)
 *** Command: *cd*
 *** Tab-completion (Tab)
 *** File
-*** Command: *touch*
 *** Directory tree (directory hierarchy)
 *** Slash ("/")
 *** Command: *ls*
 *** Working directory
 *** Command: *pwd*
-*** Command: *cd*
 *** Path
 *** Absolute path
 *** Relative path
+*** Current directory (.)
 *** Parent directory (..)
-*** Home directory (~)
+*** Home directory (~, $HOME)
 *** Root directory (/)
-*** Hidden files
+*** Hidden files (.*)
+
+
+** Make, copy, move, delete commands
+
+*** Create a directory: *mkdir*
+*** Create a file: *touch*
+*** Create or edit a file: *nano*, *vim*
+*** Copy command: *cp*
+*** Move command: *mv*
+*** Remove empty directories: *rmdir*
+*** Remove files and directories: *rm*
 
 
 ** More about commands
 
 *** Command syntax
 *** Command: *whereis*
-*** PATH
-*** Optional: environment variable
+*** A command can be an executable file, a shell built-in, an alias or a function
+*** Environment variable: PATH
 *** Built-in command
 *** Command options
 *** Unix-style options
 *** GNU-style options
 *** Other types of options
 *** Seeking help (--help, *man*, *info*)
+*** Creating aliases: *alias*
 
 
 ** Redirection and pipelines
@@ -98,7 +110,7 @@
 *** Change user account: *usermod*
 
 
-** Scripts sneak peek
+** Scripts sneak preview
 *** Scripts: automation, productivity, reproducibility
 *** Writing scripts
 *** What is a loop?
@@ -117,12 +129,8 @@ done
 #+end_src
 
 
-** Wrapping up loose ends
-*** Use the output of script: scriptreplay, less -R, cat
-*** Command line expansion and ls /usr/*n
+** Searching files and file contents
 
-
-** Searching things
 *** Recap: *which* *whereis*
 *** Command: *find*
 *** *find* does not use GNU-style options (no "--")
@@ -136,13 +144,15 @@ done
 
 
 ** Environment variables
+
 *** Passing information to processes
 *** Listing environment variables: *set* or *env*
-*** Optional: All environment variables are strings
+*** All environment variables are strings
 *** Variable lists (e.g. PATH) are separated by colon (:)
 *** Set variable value: VARIABLE_NAME=value
 *** Get variable value: $VARIABLE_NAME
 *** Variable scope (*export*)
+*** Sourcing scripts: *source* or *.*
 *** $EDITOR
 *** $PATH
 *** $PWD
@@ -176,20 +186,12 @@ done
 *** Experiment: highly concurrent file rewrite
 
 
-** Bash history tweaking
-
-*** The truth about the bash history mechanism
-*** ~/.bash_history
-*** Optional: sourcing
-*** When is the history read and written?
-*** Tweaking bash: ~/.bashrc
-*** Discussion: [[http://unix.stackexchange.com/questions/1288/preserve-bash-history-in-multiple-terminal-windows][Tweaking the history mechanism behavior]]
-
-
 ** Understanding better the file system
+
 *** In unix everything is a file
+*** But what is a file?
 *** The truth about redirection
-*** Optional: file descriptors
+*** File descriptors
 *** 2>&1
 *** Devices (/dev)
 *** Mounting (*mount*)
@@ -197,26 +199,24 @@ done
 *** Optional: /etc/fstab
 *** Links
 *** inodes
-*** Moving files (*mv*)
 *** Symbolic links (*ln -s*)
-*** John's commands explained
-
-*** Keeping permissions *tar*
-
-
-** Using computers remotelly: ssh
+*** The truth about *mv*
+*** Archive keeping permissions (*tar*)
+*** Compression (*gzip*)
+*** Archive and compress (*tar cz*)
 
 
-** TODO Pending questions
+** Tweaking bash to increase productivity
 
-*** How to indicate tab as delimiter for cut?
+*** *bash* is a command, takes options
+*** *bash* *source* some files when booting-up
+*** login shell vs non-login shell
+*** interactive shell vs non-interactive shell
+*** The place to tweak things: ~/.bashrc
+*** Other sourced files: *~/.bash_profile*, *~/.profile*, */etc/profile*...
+*** Tweaking PATH
+*** Tweaking CDPATH
+*** Creating aliases
 
-man cut ==> /tab ==> it is the default!
 
-also: http://www.linuxquestions.org/questions/programming-9/how-use-cut-d-%27delimiter%27-is-delimiter-is-a-tab-720186/
-
-*** When to use pipes, when backquotes, when xargs, when exec?
-
-Starting from the fact that some do different things (pipes write to stdin, the rest "generate command lines").
-
-A good example could come from find + grep
+** Using computers remotely: *ssh*
