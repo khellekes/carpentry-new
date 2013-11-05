@@ -6,7 +6,7 @@ This is an ongoing list of commands we have seen in class. Type "man <command>" 
 |--------------+-----------------------------------------------------+---------+----------------------------------------------|
 | man          | Show manuals for commands on screen                 |         | Press h for help, q to quit                  |
 | info         |                                                     |         |                                              |
-| pwd          | Print Working Directory                             | builtin | Print Working Directory                      |
+| pwd          | Print Working Directory                             | builtin | A shell always is in a working directory     |
 | whereis      |                                                     |         |                                              |
 | which        |                                                     |         |                                              |
 | type         |                                                     |         |                                              |
