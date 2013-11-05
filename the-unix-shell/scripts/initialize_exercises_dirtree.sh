@@ -45,3 +45,5 @@ mkdir -p "${EXERCISES_DIR}/pdbs/neurotransmitters"
 mkdir -p "${EXERCISES_DIR}/pdbs/neuropeptides"
 mkdir -p "${EXERCISES_DIR}/pdbs/luciferase"
 mkdir -p "${EXERCISES_DIR}/pdbs/gfp"
+
+cp -n "$MY_DIR/../command-table.org" "${EXERCISES_DIR}"

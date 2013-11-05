@@ -60,8 +60,15 @@ We will probably dissect the script in class. In the meantime, some questions fo
 #+end_src
 
 **** How does the "-p" option change *mkdir* behavior?
+As in:
+#+begin_src bash
+mkdir -p "${EXERCISES_DIR}"
+#+end_src
 
-**** How does the "-n" option change *cp* behavior? As in:
+What about the "--mode" option? What are those "--mode=300" options? This is probably something to ask in class...
+
+**** How does the "-n" option change *cp* behavior?
+As in:
 #+begin_src bash
 cp -n "$MY_DIR/../command-table.org" "${EXERCISES_DIR}"
 #+end_src
@@ -69,7 +76,13 @@ cp -n "$MY_DIR/../command-table.org" "${EXERCISES_DIR}"
 - What does a programmer mean by "clobbering" a file?
 - Why wouldn't I want to clobber your command-table.org file?
 
-**** Why would one put curly brackets ("{}") around variable names. Was it needed here?
+**** Why would one put curly brackets ("{}") around variable names.
+As in:
+#+begin_src bash
+mkdir -p "${EXERCISES_DIR}/pdbs"
+#+end_src
+
+Was it needed here?
 
 **** Why would one quote variable expansion when expanding paths?
 For example:
@@ -80,13 +93,9 @@ Was it needed here?
 
 **** What is the script purpose?
 
-
 ** Walking around the directory tree
 
-#+begin_src bash
-#+end_src
-
-** Dissecting command lines
+** Dissecting command line expansions
 
 ** Bash history tweaking
 
@@ -96,3 +105,5 @@ Was it needed here?
 *** When is the history read and written?
 *** Tweaking bash: ~/.bashrc
 *** Discussion: [[http://unix.stackexchange.com/questions/1288/preserve-bash-history-in-multiple-terminal-windows][Tweaking the history mechanism behavior]]
+
+** Looking and plotting molecules in pdb files
