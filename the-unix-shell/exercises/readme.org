@@ -1,0 +1,11 @@
+This directory will be the playground for our unix shell exercises. Initialize it by running:
+#+begin_src bash
+  ../scripts/initialize_exercises_dirtree.sh <your_nick_name>
+#+end_src
+
+For example:
+#+begin_src bash
+  ../scripts/initialize_exercises_dirtree.sh santi
+#+end_src
+
+Everything under this directory is ignored, which means it won't be added to the repository unless explicitly forced.
