@@ -54,30 +54,31 @@ We haven't explicitly seen yet some concepts we need to fully understand the scr
 
 We will probably dissect the script in class. In the meantime, some questions for you:
 
-- What does it mean the shell bang, the very first line in the script?
+**** What does it mean the shell bang, the very first line in the script?
 #+begin_src bash
 #!/bin/bash
 #+end_src
 
-- How does the "-p" option change *mkdir* behavior?
+**** How does the "-p" option change *mkdir* behavior?
 
-- How does the "-n" option change *cp* behavior? As in:
+**** How does the "-n" option change *cp* behavior? As in:
 #+begin_src bash
 cp -n "$MY_DIR/../command-table.org" "${EXERCISES_DIR}"
 #+end_src
-  - How does this relate to the redirection operator ">>".
-  - What does a programmer mean by "clobbering" a file?
-  - Why wouldn't I want to clobber your command-table.org file?
+- How does this relate to the redirection operator ">>".
+- What does a programmer mean by "clobbering" a file?
+- Why wouldn't I want to clobber your command-table.org file?
 
-- Why would one put curly brackets ("{}") around variable names. Was it needed here?
+**** Why would one put curly brackets ("{}") around variable names. Was it needed here?
 
-- Why would one quote variable expansion when expanding paths? For example:
+**** Why would one quote variable expansion when expanding paths?
+For example:
 #+begin_src bash
 mkdir -p "${EXERCISES_DIR}"
 #+end_src
 Was it needed here?
 
-- What is the script purpose?
+**** What is the script purpose?
 
 
 ** Walking around the directory tree
