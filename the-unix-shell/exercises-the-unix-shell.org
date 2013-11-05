@@ -1,1 +1,33 @@
 * Unix Shell Exercises
+
+You might want to have run something like "script -t 2>exercises.timings exercises.playscript".
+
+Do not run any script without understanding what it does
+
+** Run the initialization script
+
+#+begin_src bash
+cd ~/carpentry/the-unix-shell/exercises
+git pull  # Get the latest changes from the online repository
+../scripts/initialize_exercises_dirtree.sh santi
+#+end_src
+
+As an optional exercise, let's look into the initialisation script:
+#+begin_src bash
+less ../scripts/initialize_exercises_dirtree.sh
+#+end_src
+As a general rule, one should always understand what ins running. This script is very simple despite some blah
+
+** Walking around the directory tree
+
+#+begin_src bash
+#+end_src
+
+** Bash history tweaking
+
+*** The truth about the bash history mechanism
+*** ~/.bash_history
+*** Optional: sourcing
+*** When is the history read and written?
+*** Tweaking bash: ~/.bashrc
+*** Discussion: [[http://unix.stackexchange.com/questions/1288/preserve-bash-history-in-multiple-terminal-windows][Tweaking the history mechanism behavior]]

@@ -8,4 +8,4 @@ For example:
   ../scripts/initialize_exercises_dirtree.sh santi
 #+end_src
 
-Everything under this directory is ignored, which means it won't be added to the repository unless explicitly forced.
+Everything under this directory is ignored, which means it won't be added to the repository unless explicitly forced. Feel free to experiment!
