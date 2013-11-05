@@ -1,12 +1,26 @@
 * Unix Shell Exercises
 
-You might want to have run something like "script -t 2>exercises.timings exercises.playscript".
+There is no way to learn shell (or git or python...) without using it. Here is some training. Comments:
 
-Do not run any script without understanding what it does
+- I will be adding more exercises to this file. I will split the file if it gets too crowded. But exercises numeration (A1, A2, B1...) will keep constant.
+
+- Most exercises should not be time consuming - a few minutes at worst.
+
+- Come at any time to ask me any questions. But remember, *--help*, *man*, *info*, your classmates and *google* might be faster (in that increasing speed order).
+
+- My plan is to solve many exercises in class. Both as reinforcement and to introduce new concepts.
+
+- At some point I might ask you to hand-in solutions for some exercises, using git. Nothing awful will happen if you don't, but I also need feedback.
+
+- If I ask you to hand-in, *man script* might come handy.
+
+- You do not need to be able to answer to all the questions now. Most probably, you will very soon.
+
 
 ** Run the initialization script
-
 *** A1 Generate the exercises playground, create a command list
+
+Run the following commands in an interactive shell. Let me know if something goes wrong.
 
 #+begin_src bash
 
@@ -26,13 +40,18 @@ git pull
 # Now go and explore your exercises playground directory
 cd santi
 ls -la
+
+# I promise you there is some file with the string "secret" on these directories...
 find . -iname '*secret*'
+# ...did the last command help you to find it?
 
 # You should be able to see a file called command-table.org
 cat command-table.org | less
-# That is a file that you can edit, adding very short descriptions and notes for the commands we have seen in class.
+# That is a file that you can edit.
+# Add very short descriptions and notes for the commands we have seen in class.
 nano command-table.org
-# Some of these commands we haven't seen, and from now on you will be responsible to update the table.
+# Some of these commands we haven't seen.
+# From now on you will be responsible to update the table with new commands.
 # Although I will keep mine updated, so you can ask me for it at any time.
 
 # You can notice that many files here have extension ".org"
@@ -41,7 +60,6 @@ nano command-table.org
 # If you do so with emacs or let github render them, they will look nice.
 # See for example: https://github.com/strawlab/carpentry/blob/master/the-unix-shell/command-table.org
 #+end_src
-
 
 *** A2 Look into the initialisation script
 
@@ -52,9 +70,9 @@ less ../scripts/initialize_exercises_dirtree.sh
 
 We haven't explicitly seen yet some concepts we need to fully understand the script: variables, conditionals, links... The script is very simple despite some (unnecessary) complexity added for the sake of making the script work no matter of the current working directory.
 
-We will probably dissect the script in class. In the meantime, some questions for you:
+We will probably dissect this script in class. In the meantime, some questions for you to think:
 
-**** What does it mean the shell bang, the very first line in the script?
+**** What does it mean the "shebang", the initial two characters on the script?
 #+begin_src bash
 #!/bin/bash
 #+end_src
@@ -65,7 +83,7 @@ As in:
 mkdir -p "${EXERCISES_DIR}"
 #+end_src
 
-What about the "--mode" option? What are those "--mode=300" options? This is probably something to ask in class...
+What about the "--mode" option? What does it mean for a directory to have permissions "300"? This is probably something to ask in class...
 
 **** How does the "-n" option change *cp* behavior?
 As in:
@@ -94,10 +112,8 @@ Was it needed here?
 **** What is the script purpose?
 
 ** Walking around the directory tree
-
 ** Dissecting command line expansions
-
-** Bash history tweaking
+** Example project: Bash history tweaking
 
 *** The truth about the bash history mechanism
 *** ~/.bash_history
@@ -106,4 +122,8 @@ Was it needed here?
 *** Tweaking bash: ~/.bashrc
 *** Discussion: [[http://unix.stackexchange.com/questions/1288/preserve-bash-history-in-multiple-terminal-windows][Tweaking the history mechanism behavior]]
 
-** Looking and plotting molecules in pdb files
+** Example project: Plotting molecules
+
+** Example project: Analyzing trajectories
+
+** Example project: Managing fly stocks
