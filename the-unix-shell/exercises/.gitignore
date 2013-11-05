@@ -1,1 +1,2 @@
 *  # Ignore everything under this directory
+! .gitignore  # But do not ignore me
